@@ -45,13 +45,13 @@ export class NewsService {
 
     getNews(){
         let options = this.createRequestOptions();
-        let api = "https://us-central1-midterm-news.cloudfunctions.net/getNews"  
+        let api = "https:://path-to-api/getNews"  
           return this.http.get(api)
               .map(res =>  res.json());
     }
     getdataIncome(){
         let options = this.createRequestOptions();
-        let api = "https://us-central1-midterm-news.cloudfunctions.net/incomes"  
+        let api = "https:://path-to-api/incomes"  
           return this.http.get(api)
               .map(res =>  res.json());
     }
